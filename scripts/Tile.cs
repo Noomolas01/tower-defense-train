@@ -6,12 +6,13 @@ using System.Linq;
 public partial class Tile
 {
     public Vector2 Position { get; set; }
-    public List<string> Values { get; set; }
+    public Vector2 Size { get; set; }
+    //public List<string> Values { get; set; }
     
-    public Tile(Vector2 pPos, params string[] pValues) 
+    public Tile(Vector2 pSize) 
     {
-        Position = pPos;
-        Values = pValues.ToList();
+        Size = pSize;
+       // Values = pValues.ToList();
     }
 
 }

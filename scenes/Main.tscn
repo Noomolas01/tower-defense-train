@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://i5jdfegahmsf"]
+[gd_scene load_steps=3 format=3 uid="uid://i5jdfegahmsf"]
 
 [ext_resource type="Script" path="res://scripts/Main.cs" id="1_j7bcp"]
+[ext_resource type="PackedScene" uid="uid://b32t43uxee0er" path="res://scenes/graphical_tile.tscn" id="2_uf36q"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_j7bcp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(504, 272)
+
+[node name="GraphicalTile" parent="." instance=ExtResource("2_uf36q")]

@@ -39,9 +39,11 @@ namespace Com.IsartDigital.ProjectName
 
 			#endregion
 			screenSize = GetWindow().Size;
-			myGrid = new Grid(10, 10, screenSize);
-			//myGrid.OnShowGrid();
-			myGrid.SetGrid(); 
+			myGrid = new Grid(10, Vector2.One * 50);
+
+			myGrid.Print();
+			myGrid.InstantiateGraphicalTile(this);
+
 		}
 
 		public override void _Process(double pDelta)

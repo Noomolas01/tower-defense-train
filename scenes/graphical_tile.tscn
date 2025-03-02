@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://b32t43uxee0er"]
+
+[node name="GraphicalTile" type="Polygon2D"]
+polygon = PackedVector2Array(0, 0, 0, 64, 64, 64, 64, 0)
