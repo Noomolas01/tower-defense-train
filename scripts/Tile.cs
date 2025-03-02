@@ -7,11 +7,10 @@ public partial class Tile
 {
     public Vector2 Position { get; set; }
     public List<string> Values { get; set; }
-    
-    public Tile(Vector2 pPos, params string[] pValues) 
+    public Vector2 Size { get; set; }
+    public Tile(Vector2 pSize, params string[] pValues)
     {
-        Position = pPos;
+        Size = pSize;
         Values = pValues.ToList();
     }
-
 }
