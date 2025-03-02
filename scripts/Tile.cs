@@ -14,5 +14,4 @@ public partial class Tile
         Size = pSize;
        // Values = pValues.ToList();
     }
-
 }
