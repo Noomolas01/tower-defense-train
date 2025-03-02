@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://i5jdfegahmsf"]
+[gd_scene load_steps=3 format=3 uid="uid://i5jdfegahmsf"]
 
 [ext_resource type="Script" path="res://scripts/Main.cs" id="1_j7bcp"]
+[ext_resource type="PackedScene" uid="uid://4djoky61rx5d" path="res://scenes/Tile.tscn" id="2_tu88f"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_j7bcp")
+
+[node name="Polygon2D" parent="." instance=ExtResource("2_tu88f")]
+visible = false
+
+[node name="Polygon2D" type="Polygon2D" parent="Polygon2D"]
+color = Color(0.172833, 0.172833, 0.172833, 1)
+polygon = PackedVector2Array(-21, -21, 21, -21, 21, 20, -21, 20)

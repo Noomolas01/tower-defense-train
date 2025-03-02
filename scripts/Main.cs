@@ -41,7 +41,7 @@ namespace Com.IsartDigital.ProjectName
 			screenSize = GetWindow().Size;
 			myGrid = new Grid(10, 10, screenSize);
 			//myGrid.OnShowGrid();
-			myGrid.SetGrid(); 
+			myGrid.SetGraphicOnGrid(this);
 		}
 
 		public override void _Process(double pDelta)
